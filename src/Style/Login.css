@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: white;
+
+  margin-top: 5%;
+}
+.Content_wrapper h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+.Content_wrapper p {
+  color: gray;
+  width: 90%;
+  font-size: 12px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.Image_wrapper {
+  padding: 2px;
+}
+.Content_wrapper {
+  margin-top: 30px;
+  width: 50%;
+}
+.Image_wrapper {
+  width: 50%;
+}
+
+.Content_wrapper {
+  padding: 20px;
+}
+.input_wrapper label {
+  color: #24aeb1;
+}
+.Social_wrapper button {
+  background-color: white;
+  width: 35%;
+  margin: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(193, 191, 191);
+}
+.Social_wrapper{
+  text-align: center;
+}
