@@ -1,0 +1,20 @@
+.wellness{
+    width: 98%;
+    height: 100vh;
+    margin:auto;
+    border:1px solid red;
+    padding:0.5rem 0.5rem
+}
+.wellnessbox{
+    width: 98%;
+    height: 98%;
+    border:1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productsbox{
+    width: 75%;
+    height:98%;
+    border: 1px solid blueviolet;
+}

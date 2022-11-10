@@ -1,0 +1,41 @@
+.categorypage{
+    width: 98%;
+    height: fit-content;
+    margin:auto;
+    border:1px solid red;
+    padding:0.5rem 0.5rem
+}
+.categorypagebox{
+    width: 98%;
+    height: 98%;
+    border:1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productsbox{
+    width: 80%;
+    height:98%;
+    border: 1px solid blueviolet;
+}
+.categoryimagebox{
+    width: 100%;
+    height: fit;
+}
+.categoryimagebox>img{
+    width: 100%;
+    height: fit;
+}
+.sortingbox{
+   width: 100%;
+   height:3rem;
+   border: 1px solid red; 
+}
+.gridbox{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 3fr));
+    justify-items: center;
+    gap: 10px;
+}
