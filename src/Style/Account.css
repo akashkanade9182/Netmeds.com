@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.container{
+    
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: left;
+}
+.bottom_box{
+    display: flex;
+    margin-top: 15px;
+  
+}
+.Sidebar{
+    width: 30%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    display: flex;
+    
+    flex-direction: column;
+}
+.SideBox{
+    
+    width: 70%;
+    /* border:2px solid green */
+}

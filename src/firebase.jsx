@@ -10,11 +10,11 @@ const firebaseConfig = {
   storageBucket: "netmedsauth.appspot.com",
   messagingSenderId: "495820235691",
   appId: "1:495820235691:web:99ea3aab1c9e2ec13668ee",
-  measurementId: "G-CMZ2WFV63C"
+  measurementId: "G-CMZ2WFV63C",
+  databaseURL:"https:/netmedsauth-default-rtdb.firebaseio.com"
 };
 
-
 const app = initializeApp(firebaseConfig);
-const auth=getAuth()
+const auth = getAuth(app);
 
-export {app,auth }
+export { app, auth };
