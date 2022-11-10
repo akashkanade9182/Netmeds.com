@@ -1,38 +1,54 @@
-import { Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
-import React, { useState } from "react";
+import {
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  useToast,
+} from "@chakra-ui/react";
+
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import React, { useState } from "react";
 import { auth } from "../firebase";
-import { async } from "@firebase/util";
+
 import { Link, useNavigate } from "react-router-dom";
 const SignUp = () => {
-  const [submitDisable, setsubmitDisable] = useState(false);
   const navigate = useNavigate();
-  const [value, setValue] = useState({
-    name: "",
-    lastname: "",
-    number: "",
-    email: "",
-    password: "",
-  });
+  const toast = useToast();
+  const [name, setName] = useState("");
+  const [lname, setLName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleForm = (e) => {
+  const submitUser = async (e) => {
     e.preventDefault();
-    console.log(value);
+    setName("");
+    setLName("");
+    setPhone("");
+    setEmail("");
+    setPassword("");
 
-    setsubmitDisable(true);
-    createUserWithEmailAndPassword(auth, value.email, value.password)
-      .then(async (res) => {
-        console.log(res);
-        setsubmitDisable(false);
-        const user = res.user;
-        await updateProfile(user, { displayName: value.name });
-        console.log(user.displayName);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+        updateProfile(user, { displayName: `${name} ${lname}` });
+
+        toast({
+          title: "Account created.",
+          description: `We've created your account for you.`,
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
         navigate("/login");
       })
-      .catch((err) => {
-        console.log(err, "Error");
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
       });
   };
+
   return (
     <>
       <img
@@ -41,65 +57,57 @@ const SignUp = () => {
         alt=""
       />
       <div className="Form_box">
-        <form onSubmit={handleForm}>
+        <form onSubmit={submitUser}>
           <h3 style={{ fontSize: "20px", fontWeight: "bolder" }}>Sign Up</h3>
           <FormControl>
             <FormLabel>First Name</FormLabel>
             <Input
               type="text"
               placeholder="Enter first name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               required
-              onChange={(e) =>
-                setValue((prev) => ({ ...prev, name: e.target.value }))
-              }
             />
             <FormLabel>Last Name</FormLabel>
             <Input
               type="text"
+              value={lname}
               placeholder="Enter last name"
+              onChange={(e) => setLName(e.target.value)}
               required
-              onChange={(e) =>
-                setValue((prev) => ({ ...prev, lastname: e.target.value }))
-              }
             />
             <FormLabel>Phone Number</FormLabel>
             <Input
               type="number"
+              value={phone}
               placeholder="Enter your number"
+              onChange={(e) => setPhone(e.target.value)}
               required
-              onChange={(e) =>
-                setValue((prev) => ({ ...prev, number: e.target.value }))
-              }
             />
             <FormLabel>Email</FormLabel>
             <Input
               type="email"
+              value={email}
               placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
               required
-              onChange={(e) =>
-                setValue((prev) => ({ ...prev, email: e.target.value }))
-              }
             />
             <FormLabel>Password</FormLabel>
             <Input
               type="password"
+              value={password}
               placeholder="Enter password"
+              onChange={(e) => setPassword(e.target.value)}
               required
-              onChange={(e) =>
-                setValue((prev) => ({ ...prev, password: e.target.value }))
-              }
             />
             <div
               style={{
                 display: "flex",
-                margin: "5px",
-                justifyContent: "space-between",
+                justifyContent: "space-evenly",
               }}
             >
               <div>
-                <Button disabled={submitDisable} type="submit">
-                  Create account
-                </Button>
+                <Button type="submit">Create account</Button>
               </div>
               <div>
                 {" "}

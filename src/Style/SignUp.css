@@ -7,7 +7,7 @@
 .BackImage {
   position: relative;
   width: 100%;
-  filter: blur(4px);
+  filter: blur(8px);
   height: 100vh;
 }
 .Form_box {

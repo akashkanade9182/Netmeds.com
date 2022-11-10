@@ -1,41 +1,85 @@
-import { Input, Button } from "@chakra-ui/react";
+import { Input, Button, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { auth } from "../firebase";
-import { Link, useNavigate } from "react-router-dom";
 import {
-  GoogleAuthProvider,
   signInWithEmailAndPassword,
+  GoogleAuthProvider,
   signInWithPopup,
+  
 } from "firebase/auth";
+import { auth } from "../firebase";
+import { Link } from "react-router-dom";
 import "../Style/SignUp.css";
 import "../Style/Login.css";
+
 const Login = () => {
-  const navigate = useNavigate();
-  const [value, setValue] = useState({
-    email: "",
-    password: "",
-  });
+  const toast = useToast();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    console.log(value);
+  const provider = new GoogleAuthProvider();
 
-    signInWithEmailAndPassword(auth, value.email, value.password)
-      .then(async (res) => {
-        console.log(res);
-        alert("Login Successfull");
-        // navigate("/signup");
-      })
-      .catch((err) => {
-        console.log(err, "Error");
+  const LoginUser = () => {
+    const statuses = ["error"];
+    if (email === "" || password === "") {
+      toast({
+        title: `${"please fill all fields"}`,
+        status: statuses,
+        isClosable: true,
       });
-    setValue("");
+    } else {
+      setEmail("");
+      setPassword("");
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          toast({
+            title: "Login Sucessful.",
+            description: `Welcome back ${userCredential.user.displayName}`,
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
+
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+
+          // console.log(errorCode);
+
+          console.log(errorMessage);
+        });
+    }
   };
 
-  const googleLogin = () => {
-    const GoogleAuth = new GoogleAuthProvider();
-    return signInWithPopup(auth, GoogleAuth);
+  const GoogleLogin = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        toast({
+          title: "Login Sucessful.",
+          description: `Welcome back ${user.displayName}`,
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
+        console.log(user.email);
+        console.log(user.displayName);
+        // ...
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        // const errorCode = error.code;
+        // const errorMessage = error.message;
+        // The email of the user's account used.
+        // const email = error.customData.email;
+        // The AuthCredential type that was used.
+        // const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
   };
+
+
   return (
     <>
       <div className="main_container">
@@ -63,12 +107,11 @@ const Login = () => {
                 Email
               </label>
               <Input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
                 types="email"
-                onChange={(e) =>
-                  setValue((prev) => ({ ...prev, email: e.target.value }))
-                }
               />
               <label
                 style={{
@@ -80,21 +123,21 @@ const Login = () => {
                 Password
               </label>
               <Input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter your password"
                 required
-                onChange={(e) =>
-                  setValue((prev) => ({ ...prev, password: e.target.value }))
-                }
                 type="password"
               />
+
               <Button
+                onClick={() => LoginUser()}
                 style={{
                   color: "white",
                   backgroundColor: "#24aeb1",
                   width: "100%",
                   marginTop: "20px",
                 }}
-                onClick={handleLogin}
               >
                 Login
               </Button>
@@ -112,10 +155,11 @@ const Login = () => {
                   Create account
                 </Button>
               </Link>
+              
             </div>
 
             <div className="Social_wrapper">
-              <Button onClick={googleLogin}>
+              <Button onClick={() => GoogleLogin()}>
                 {" "}
                 <img
                   style={{ margin: "5px", width: "20px" }}
@@ -136,6 +180,7 @@ const Login = () => {
             </div>
           </div>
         </div>
+
         <div className="Foot" style={{ textAlign: "center" }}>
           <p>
             By continuing you agree to our{" "}
