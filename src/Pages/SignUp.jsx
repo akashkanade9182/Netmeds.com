@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import { auth } from "../firebase";
 
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "../HomePage/Navbar/Navbar";
 const SignUp = () => {
   const navigate = useNavigate();
   const toast = useToast();
@@ -51,6 +52,7 @@ const SignUp = () => {
 
   return (
     <>
+    <Navbar/>
       <img
         className="BackImage"
         src={require("../assests/Images/Netmeds.jpeg")}

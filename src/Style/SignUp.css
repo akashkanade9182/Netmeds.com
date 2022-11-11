@@ -22,14 +22,14 @@
   justify-items: center;
   top: 0px;
   right: 33%;
-  opacity: .7;
+  opacity: 0.7;
   background-color: white;
 }
 .Form_box {
-  margin-top: 10%;
+  margin-top: 20%;
 }
-.Form_box label{
-    font-weight: 600;
+.Form_box label {
+  font-weight: 600;
 }
 .Form_box button {
   margin-top: 10px;
@@ -38,9 +38,9 @@
   width: 90%;
 }
 
-.Form_box input{
+.Form_box input {
   border: 1px solid #24aeb1;
   background-color: white;
 
- color: black;
+  color: black;
 }
