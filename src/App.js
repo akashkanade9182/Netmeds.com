@@ -1,19 +1,22 @@
-
+import logo from './logo.svg';
 import './App.css';
-import SignUp from './Pages/SignUp';
-import Login from './Pages/Login';
-import {Route,Routes} from "react-router-dom"
+import Wellness from './Pages/Wellness';
+import CategoryPage from './Pages/CategoryPage';
+import PersonalCare from './Pages/PersonalCare';
+import SingalPage from './Pages/SingalPage';
+import AllRoutes from './Pages/AllRoutes';
+
+
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/signup' element={<SignUp/>}/>
-    </Routes>
     <div className="App">
-     
+      {/* <Wellness/> */}
+      {/* <CategoryPage/> */}
+    {/* <PersonalCare/>   */}
+    {/* <SingalPage/> */}
+    <AllRoutes/>
+    
     </div>
-    </>
   );
 }
 

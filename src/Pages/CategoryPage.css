@@ -1,0 +1,41 @@
+.cat{
+    width: 100%;
+    margin: auto;
+    /* border:1 solid red */
+}
+.catbox{
+    width:95%;
+    margin: auto;
+    /* border:1 solid red; */
+    text-align: left;
+}
+.catbox>h1{
+    margin-left: 40px;
+    font-size: 1.5rem;
+    margin-top: 35px;
+
+}
+.cattrain{
+    width: 98%;
+    margin: auto;
+    margin-top: 15px;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-around;
+    align-items: center;
+}
+.carttrainbox{
+    width: 230px;
+height:300px;
+text-align: center;
+padding:10px 10px;
+background-color: white;
+border-radius: 7px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/* border: 1px solid green; */
+
+}
+.carttrainbox>img{
+    width: 100%;
+}
