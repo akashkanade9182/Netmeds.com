@@ -1,6 +1,6 @@
 import { Image, Box ,Flex,Spacer} from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
-import { VStack, StackDivider, Input } from '@chakra-ui/react'
+import { VStack, Input } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/react'
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
@@ -9,23 +9,23 @@ const Footer = () => {
 
 
     return (
-        <div style={{ width: "90%", margin: "auto", marginTop: "40px", marginBottom: "40px" }}>
-            <div style={{ display: "flex", gap: "40px" }}>
+        <div style={{ width: "90%", margin: "auto" }}>
+            <div style={{ display: "flex", gap: "10px",height:"100px",marginTop:"40px" }}>
                 <Box boxSize='sm'>
                     <Image src='https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg' alt='Dan Abramov' />
                 </Box>
                 <div>
-                    <Text color="#0b1219" noOfLines={[1, 2]} style={{ textAlign: "left", width: "75%", lineHeight: "24px", color: "#0b1219" }}>
+                    <Text color="#0b1219" noOfLines={[1, 2]} style={{ textAlign: "left", width: "75%", lineHeight: "14px",color: "#0b1219" }}>
                         Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India.
                     </Text>
                 </div>
             </div>
             {/* <Divider orientation='horizontal' color="black"/> */}
+                 {/* <StackDivider borderColor='gray.200' /> */}
             <hr />
-            <div style={{ textAlign: "left", color: "#0b1219", fontSize: "15px", lineHeight: "30px", display: "flex", justifyContent: "space-between" ,marginTop: "40px", marginBottom: "40px"}}>
+            <div style={{ textAlign: "left", color: "#0b1219", fontSize: "15px", lineHeight: "30px", display: "flex", justifyContent: "space-between" }}>
                 <div>
                     <VStack
-                        divider={<StackDivider borderColor='gray.200' />}
                         spacing={4}
                         align='stretch'
                     >
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <VStack
-                        divider={<StackDivider borderColor='gray.200' />}
+                        // divider={<StackDivider borderColor='gray.200' />}
                         spacing={4}
                         align='stretch'
                     >
@@ -94,7 +94,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <VStack
-                        divider={<StackDivider borderColor='gray.200' />}
+                        // divider={<StackDivider borderColor='gray.200' />}
                         spacing={4}
                         align='stretch'
                     >
@@ -124,7 +124,7 @@ const Footer = () => {
                 </div>
                 <div style={{ width: "20%"}}>
                     <VStack
-                        divider={<StackDivider borderColor='gray.200' />}
+                        // divider={<StackDivider borderColor='gray.200' />}
                         spacing={4}
                         align='stretch'
                         lineHeight="20px"
@@ -136,11 +136,11 @@ const Footer = () => {
                             Get a free subscription to our health and fitness tip and stay tuned to our latest offers
                         </Box>
                         <Box >
-                            <Input border={"none"} width="60%" placeholder='Enter your Email Address' />
-                            <Icon as={ArrowForwardIcon} w={20} h={20} color="#23adb0" />
+                            <Input border={"none"} width="80%" placeholder='Enter your Email Address' fontSize={12}/>
+                            <Icon as={ArrowForwardIcon} w={5} h={5} color="#23adb0" />
                             <hr />
                         </Box>
-                        <Box >
+                        <Box display={"flex"}>
                             <Image
                                 boxSize='100px'
                                 objectFit='contain'
@@ -162,23 +162,23 @@ const Footer = () => {
             <hr />
             <div>
                 <Flex color="#0b1219" lineHeight="65px">
-                    <Box p='4' bg='red.400'>
+                    <Box p='4' >
                     Medicine
                     </Box>
                     <Spacer />
-                    <Box p='4' bg='green.400'>
+                    <Box p='4' >
                     Wellness
                     </Box>
                     <Spacer />
-                    <Box p='4' bg='red.400'>
+                    <Box p='4' >
                     Lab Tests
                     </Box>
                     <Spacer />
-                    <Box p='4' bg='green.400'>
+                    <Box p='4' >
                     Beauty
                     </Box>
                     <Spacer />
-                    <Box p='4' bg='green.400'>
+                    <Box p='4' >
                     Copyright© 2022. All Rights Reserved.
                     </Box>
                 </Flex>
