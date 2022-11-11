@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../Style/Account.css";
-import { Button, Heading } from "@chakra-ui/react";
+import { Button, Heading, useToast } from "@chakra-ui/react";
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../HomePage/Navbar/Navbar";
+import Footer from "../HomePage/Navbar/Footer";
 const Account = () => {
+  const toast = useToast();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
@@ -20,12 +23,18 @@ const Account = () => {
     });
   }, []);
 
-
-
   const LogoutUser = () => {
     signOut(auth)
       .then(() => {
         console.log("Sign-out successful");
+        toast({
+          title: "Logout Sucessful.",
+          position: "top",
+          // description: `Welcome back ${userCredential.user.displayName}`,
+          status: "success",
+          duration: 4000,
+          isClosable: true,
+        });
         navigate("/login");
       })
       .catch((error) => {
@@ -34,6 +43,8 @@ const Account = () => {
   };
   console.log(username);
   return (
+      <>
+      <Navbar/>
     <div className="container">
       <div>
         <Heading as="h3" size="lg">
@@ -52,7 +63,7 @@ const Account = () => {
           >
             <div>
               <img
-                style={{ margin: "10px", width: "60px" }}
+                style={{ margin: "10px", width: "50px" }}
                 src="https://www.netmeds.com/msassets/images/icons/profile-icon.svg"
                 alt=""
               />
@@ -63,8 +74,31 @@ const Account = () => {
             </div>
           </div>
 
-          <div>
-            <h4>LIST BOX</h4>
+          <div className="Btn">
+            <Button colorScheme="white" className="Btns">
+              {" "}
+              Account Information{" "}
+            </Button>
+            <br />
+            <Button className="Btns">My Wallet </Button>
+            <br />
+            <Button className="Btns">My Wishlist</Button>
+            <br />
+            <Button className="Btns">Offers</Button>
+            <br />
+            <Button className="Btns">Netmeds first</Button>
+            <br />
+            <Button className="Btns">Delivery Address</Button>
+            <br />
+            <Button className="Btns">My Prescription</Button>
+            <br />
+            <Button className="Btns">Contact us</Button>
+            <br />
+            <Button className="Btns">Rate us</Button>
+            <br />
+            <Button onClick={() => LogoutUser()} className="Btns">
+              Logout
+            </Button>
           </div>
         </div>
         <div className="SideBox">
@@ -79,6 +113,7 @@ const Account = () => {
               justifyItems: "center",
               border: "2px solid lightblue",
               padding: "5px",
+              borderRadius: "10px",
             }}
           >
             <div>
@@ -118,6 +153,7 @@ const Account = () => {
               border: "2px solid orange",
               marginTop: "5%",
               padding: "5px",
+              borderRadius: "10px",
             }}
           >
             <div>
@@ -154,29 +190,29 @@ const Account = () => {
                 {"NO-data"}
               </Heading>
             </div>
-
-        
           </div>
           <Button
-              style={{
-                color: "white",
-                backgroundColor: "#24aeb1",
-                width: "max-content",
-                display:"flex",
-              
-               alignItems:"center",
-               justifyItems:"center",
-               margin:"auto",
-                
-                marginTop:"5%"
-              }}
-              onClick={() => LogoutUser()}
-            >
-              Logout
-            </Button>
+            style={{
+              color: "white",
+              backgroundColor: "#24aeb1",
+              width: "max-content",
+              display: "flex",
+
+              alignItems: "center",
+              justifyItems: "center",
+              margin: "auto",
+
+              marginTop: "5%",
+            }}
+            onClick={() => LogoutUser()}
+          >
+            Logout
+          </Button>
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

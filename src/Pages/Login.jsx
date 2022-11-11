@@ -4,24 +4,26 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
-  
 } from "firebase/auth";
 import { auth } from "../firebase";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import "../Style/SignUp.css";
 import "../Style/Login.css";
+import Navbar from "../HomePage/Navbar/Navbar";
+import Footer from "../HomePage/Navbar/Footer";
 
 const Login = () => {
   const toast = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const provider = new GoogleAuthProvider();
 
   const LoginUser = () => {
     const statuses = ["error"];
     if (email === "" || password === "") {
       toast({
+        position: "top",
         title: `${"please fill all fields"}`,
         status: statuses,
         isClosable: true,
@@ -34,17 +36,25 @@ const Login = () => {
           toast({
             title: "Login Sucessful.",
             description: `Welcome back ${userCredential.user.displayName}`,
+            position: "top",
             status: "success",
-            duration: 9000,
+            duration: 4000,
             isClosable: true,
           });
-
+          navigate("/");
           const user = userCredential.user;
           console.log(user);
         })
         .catch((error) => {
           const errorMessage = error.message;
+          toast({
+            title: `${errorMessage}`,
 
+            position: "top",
+            status: "error",
+            duration: 3000,
+            isClosable: false,
+          });
           // console.log(errorCode);
 
           console.log(errorMessage);
@@ -56,13 +66,16 @@ const Login = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
+
         toast({
           title: "Login Sucessful.",
           description: `Welcome back ${user.displayName}`,
+          position: "top",
           status: "success",
           duration: 9000,
           isClosable: true,
         });
+        navigate("/");
         console.log(user.email);
         console.log(user.displayName);
         // ...
@@ -79,9 +92,9 @@ const Login = () => {
       });
   };
 
-
   return (
     <>
+      <Navbar />
       <div className="main_container">
         <div className="Container">
           <div className="Image_wrapper">
@@ -155,7 +168,6 @@ const Login = () => {
                   Create account
                 </Button>
               </Link>
-              
             </div>
 
             <div className="Social_wrapper">
@@ -191,6 +203,7 @@ const Login = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
