@@ -1,0 +1,13 @@
+.card{
+    display:inline-block;
+    background-color: rgb(240, 192, 192);
+    opacity: 1 !important ; 
+    z-index: 1; 
+}
+.productName > p {
+    color:grey;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+}
+
