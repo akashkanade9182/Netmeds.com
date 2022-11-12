@@ -6,7 +6,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { auth } from "../firebase";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Style/SignUp.css";
 import "../Style/Login.css";
 import Navbar from "../HomePage/Navbar/Navbar";
@@ -26,7 +26,6 @@ const Login = () => {
         position: "top",
         title: `${"please fill all fields"}`,
         status: statuses,
-        isClosable: true,
       });
     } else {
       setEmail("");
@@ -39,7 +38,7 @@ const Login = () => {
             position: "top",
             status: "success",
             duration: 4000,
-            isClosable: true,
+           
           });
           navigate("/");
           const user = userCredential.user;
@@ -73,7 +72,7 @@ const Login = () => {
           position: "top",
           status: "success",
           duration: 9000,
-          isClosable: true,
+          
         });
         navigate("/");
         console.log(user.email);
