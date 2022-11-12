@@ -93,7 +93,7 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
+    <Navbar/>
       <div className="main_container">
         <div className="Container">
           <div className="Image_wrapper">
