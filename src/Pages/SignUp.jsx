@@ -12,6 +12,7 @@ import { auth } from "../firebase";
 
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../HomePage/Navbar/Navbar";
+import Footer from "../HomePage/Navbar/Footer";
 const SignUp = () => {
   const navigate = useNavigate();
   const toast = useToast();
@@ -122,6 +123,7 @@ const SignUp = () => {
           </FormControl>
         </form>
       </div>
+      <Footer/>
     </>
   );
 };
