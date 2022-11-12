@@ -4,7 +4,6 @@ import { Image,Text,Box, Button } from '@chakra-ui/react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
-import Countdown from 'react-countdown';
 import axios from 'axios';
 
 
@@ -29,12 +28,12 @@ const responsiveSettings = [
 
 
 
-const LimitedTimeDeals = ()=>{
+const BrandsDay = ()=>{
 
    const [products, setProducts] = useState([])
 
    const getData = ()=>{
-    axios.get("http://localhost:8080/products?_limit=10")
+    axios.get("http://localhost:8080/products?subcategory=Sports%20Supplements")
     .then((r)=>{
         setProducts(r.data)
     })
@@ -47,11 +46,10 @@ const LimitedTimeDeals = ()=>{
    console.log(products)
 
     return (
-        <div style={{background: "rgb(35,173,176)",color:"#ffffff", margin:"auto"}}>
+        <div style={{background: "rgb(35,173,176)",color:"#ffffff", margin:"auto", marginTop:"30px"}}>
             <div style={{display:"flex",margin:"auto",width:"90%",justifyContent:"space-between"}}>
                 <div style={{textAlign:"left"}}>
-                    <Text fontSize='3xl'>Limited Time Deals</Text>
-                    <p style={{display:"flex", alignItems:"center"}}> <img src="https://www.netmeds.com/assets/version1667495847/gloryweb/images/icons/time.png" alt=""/> <Countdown date={Date.now() + 10000000} /> remaining</p>
+                    <Text fontSize='3xl'>Brands Day - La-Med Upto 70% off</Text>
                 </div>
                 <div>
                     <button style={{background: "rgb(35,173,176)",color:"#ffffff",border:"none",marginTop:"10px"}}>View All {">"}</button>
@@ -83,4 +81,4 @@ const LimitedTimeDeals = ()=>{
     )
 }
 
-export default LimitedTimeDeals
+export default BrandsDay
