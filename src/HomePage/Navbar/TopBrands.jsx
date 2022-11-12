@@ -52,7 +52,7 @@ const TopBrands = () => {
     ];
     return (
         <div style={{ width: "90%", margin: "auto" }}>
-            <Text fontSize='4xl'>Top Brands</Text>
+            <Text fontSize='4xl' textAlign={"left"}>Top Brands</Text>
             <Slide slidesToScroll={2} slidesToShow={2} indicators={true} responsive={responsiveSettings} style={{ objectFit: "fill" }}>
                 {
                     images.map((item) => (

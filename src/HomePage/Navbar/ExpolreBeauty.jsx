@@ -53,7 +53,7 @@ const ExploreBeauty = () => {
     return (
         <Box backgroundColor="#ee4180">
             <Box style={{ width: "90%", margin: "auto" }}>
-                <Text fontSize='4xl'>Explore Beauty</Text>
+                <Text fontSize='4xl' textAlign={"left"}>Explore Beauty</Text>
                 <Box>
 
                     <Slide slidesToScroll={2} slidesToShow={2} indicators={true} responsive={responsiveSettings} style={{ objectFit: "fill" }}>
