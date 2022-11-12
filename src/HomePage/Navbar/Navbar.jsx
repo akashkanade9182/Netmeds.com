@@ -5,7 +5,7 @@ import { auth } from "../../firebase";
 import SearchBar from "./SearchBar";
 
 const Navbar = () => {
-  // Do Note Change code Below
+  // Do Not Change code Below
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
