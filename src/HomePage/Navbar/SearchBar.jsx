@@ -31,7 +31,7 @@ const SearchBar = ({querhandler,suggestions})=>{
                 return
         }
     }
-    
+    console.log(suggestions)
     return (
 <>        <div >
             <Wrapper style={{width:"30rem"}} onKeyUp={handleActiveSuggestion}>
@@ -42,10 +42,10 @@ const SearchBar = ({querhandler,suggestions})=>{
         </div>
                 <SuggestionBox style={{width:'30rem',position:'absolute',top:'4rem',border:'none',left:'25%',zIndex:'100'}} className={`bar`} len={5} active={active}>
                     {suggestions.map((item,index)=>(
-                        <Link to={`/products/${item}`}>
-                            <div key={index} onMouseOver={()=>setActive(index+1)} style={{textOverflow: "clip"}}>{item}</div>
+                        // <Link to={`/products/${index}`}>
+                        <div key={index} onMouseOver={()=>setActive(index+1)} style={{textOverflow: "clip"}}>{item}</div>
 
-                         </Link>
+                        //   </Link>
                     ))}
                 </SuggestionBox></>
     )
