@@ -38,9 +38,9 @@ const SignUp = () => {
         toast({
           title: "Account created.",
           description: `We've created your account for you.`,
+          position: "top",
           status: "success",
           duration: 9000,
-          isClosable: true,
         });
         navigate("/login");
       })
@@ -52,7 +52,7 @@ const SignUp = () => {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <img
         className="BackImage"
         src={require("../assests/Images/Netmeds.jpeg")}

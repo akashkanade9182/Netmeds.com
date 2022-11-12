@@ -101,7 +101,7 @@ const Navbar = () => {
               />
               <b style={{ color: "white" }}>
                 {" "}
-                <Link to="/account"> {username} </Link>
+                 {username} 
               </b>
             </button>
           </Link>
