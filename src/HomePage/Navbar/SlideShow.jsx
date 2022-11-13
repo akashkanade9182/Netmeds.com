@@ -23,7 +23,7 @@ const slideImages = [
 const Slideshow = () => {
     return (
       <div style={{width:"100%",margin:"auto"}}>
-        <Box width="90%" margin="auto">
+        <Box width="95%" margin="auto">
             <Slide>
             {
               slideImages.map((item)=>(

@@ -42,7 +42,7 @@ const BrandsDay = () => {
                     <button style={{ background: "rgb(35,173,176)", color: "#ffffff", border: "none", marginTop: "10px" }}>View All {">"}</button>
                 </div>
             </div>
-            <div>
+            <div style={{margin: "auto", width: "90%"}}>
                 <Slide slidesToScroll={2} slidesToShow={2} indicators={true} responsive={responsiveSettings}>
 
                     {
