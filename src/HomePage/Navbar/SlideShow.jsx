@@ -38,6 +38,7 @@ const Slideshow = () => {
               ))} 
             </Slide>
           </div>
+         
       </div>
     )
 }

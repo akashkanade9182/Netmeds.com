@@ -1,13 +1,14 @@
+import { Link, useNavigate } from "react-router-dom"
 import SearchBar from "./SearchBar"
 
 const Navbar = () => {
 
-
+const navigate = useNavigate()
     return (
         <div>
             <div style={{ backgroundColor: "#32aeb1", }} >
                 <div style={{ display: "flex", alignItems: "center", width: "80%", margin: "auto", justifyContent: "space-between", padding: "16px 0px 16px" }}>
-                    <img style={{ backgroundColor: "#32aeb1", height: "60px", width: "168px" }} src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="Netmeds" />
+                    <img onClick={()=>{navigate('/')}} style={{ backgroundColor: "#32aeb1", height: "60px", width: "168px" }} src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="Netmeds" />
                     <SearchBar />
                     <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px" }}>
                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg" alt="upload" />
@@ -31,14 +32,15 @@ const Navbar = () => {
                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt="Wellness" />
                         <b >Wellness</b>
                     </button>
-                    <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px",gap:"4px" }}>
+                    <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px",gap:"4px" }} onClick={()=>{navigate('/health-packages')}}>
                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt="Lab Tests" />
                         <b >Lab Tests</b>
                     </button>
-                    <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px",gap:"4px" }}>
+               <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px",gap:"4px" }} onClick={()=>{navigate('/beauty')}}>
                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg" alt="Beauty" />
                         <b >Beauty</b>
-                    </button>
+                    </button> 
+                  
                     <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px",gap:"4px" }}>
                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/health-library.svg" alt="Health Corner" />
                         <b >Health Corner</b>

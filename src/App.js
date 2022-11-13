@@ -7,17 +7,23 @@ import Login from "./Pages/Login";
 import { Route, Routes } from "react-router-dom";
 
 import Account from "./Pages/Account";
+import { Beauty } from './BeaytyPage/Beauty';
+import { LabTest } from './LabTest/LabTest';
+import { Admin } from './Admin/Admin';
 function App() {
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/account" element={<Account />} />
         <Route path="/signup" element={<SignUp />} />
-      </Routes>
-      <div className="App"></div>
+        <Route path='/beauty' element={<Beauty/>}  />
+        <Route path='/health-packages' element={<LabTest/>}  />
+      </Routes> */}
+      <Admin/>
     </>
+
   );
 }
 

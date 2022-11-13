@@ -1,0 +1,191 @@
+{"data": [
+    {"name":"Top offers on Brands" , 
+     "arr":[
+         {
+          "id": 1,
+             "img": "https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg",
+          "title": "Maybelline",
+          "disc":""
+        },
+         {
+          "id": 2,
+             "img": "https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg",
+          "title": "garnie"
+     ,"desc":""        },
+         {
+          "id": 3,
+          "img":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg",
+          "title": "Myglamm"
+    ,"desc":""          },
+         {
+          "id": 4,
+             "img": "https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg",
+          "title": "Colorbar"     ,"desc":""
+           
+         },
+         {
+          "id": 5,
+             "img": "https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg",
+          "title": "Plum"
+       ,"desc":""       }
+       ]},
+       {"name":"Shop by Category " , 
+       "arr":[
+           {
+            "id": 1,
+               "img": "https://www.netmeds.com/images/cms/aw_rbslider/slides/1659522043_Soulflower-910x460.jpg",
+            "title": ""
+          },
+           {
+            "id": 2,
+               "img": "https://www.netmeds.com/images/cms/aw_rbslider/slides/1660072825_Creative_436-X-224_2.jpg"
+           },
+           {
+            "id": 3,
+               "img": "https://www.netmeds.com/images/cms/aw_rbslider/slides/1657135073_Revolution-436x224.jpg"
+         }
+         ]},
+         {"name":"Skin care Essentials" , 
+         "arr":[
+             {
+              "id": 1,
+                 "img": "https://www.netmeds.com/images/category/v1/3495/thumb/face_wash_cleansers_1.jpg",
+              "title": "Face Wash & Cleansers",
+              "disc":""
+            },
+             {
+              "id": 2,
+                 "img": "https://www.netmeds.com/images/category/v1/525/thumb/body_care_1.jpg",
+              "title": "Body Care"
+         ,"desc":""        },
+             {
+              "id": 3,
+                 "img": "https://www.netmeds.com/images/category/v1/3476/thumb/nail_care_1.jpg",
+              "title": "Nail Care"
+        ,"desc":""          },
+             {
+              "id": 4,
+                 "img": "https://www.netmeds.com/images/category/v1/3784/thumb/skin_care_1.jpg",
+              "title": "Skin Care"     ,"desc":""
+               
+             },
+             {
+              "id": 5,
+                 "img": "https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg",
+              "title": "Hair Care"
+           ,"desc":""       }
+           ]},
+
+
+           {"name":"Hair care Essentials" , 
+           "arr":[
+               {
+                "id": 1,
+                 "img": "https://www.netmeds.com/images/category/v1/3495/thumb/face_wash_cleansers_1.jpg",
+              "title": "Face Wash & Cleansers"
+              },
+               {
+                "id": 2,
+                   "img": "https://www.netmeds.com/images/category/3505/thumb/facial_kits_1.jpg",
+                "title": "Facial Kits"
+               },
+               {
+                "id": 3,
+                   "img": "https://www.netmeds.com/images/category/v1/3903/thumb/face_skin_care_2.jpg",
+                "title": "Face Skin Care"
+         },
+               {
+                "id": 4,
+                   "img": "https://www.netmeds.com/images/category/v1/3431/thumb/make_up_3.jpg",
+                "title": "Make Up" 
+               },
+               {
+                "id": 5,
+                   "img": "https://www.netmeds.com/images/category/v1/3499/thumb/day_cream_2.jpg",
+                "title": "Day Cream"}
+             ]}
+             ,
+             {"name":"Men’s Grooming" , 
+           "arr":[
+               {
+                "id": 1,
+                 "img": "https://www.netmeds.com/images/category/551/thumb/hair_oils_2.jpg",
+              "title": "Hair Oils"
+              },
+               {
+                "id": 2,
+                   "img": "https://www.netmeds.com/images/category/553/thumb/hair_treatment_3.jpg",
+                "title": "Hair Treatment"
+               },
+               {
+                "id": 3,
+                   "img": "https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_2.jpg",
+                "title": "Hair Gels Waxes"
+         },
+               {
+                "id": 4,
+                   "img": "https://www.netmeds.com/images/category/v1/3705/thumb/hair_perms_texturizers_1.jpg",
+                "title": "Hair Perms Texturizers" 
+               },
+               {
+                "id": 5,
+                   "img": "https://www.netmeds.com/images/category/v1/3706/thumb/hair_sprays_mists_0.jpg",
+                "title": "Hair Sprays Mists"}
+             ]}
+             ,
+             {"name":"The Latest In Beauty" , 
+           "arr":[
+               {
+                "id": 1,
+                 "img": "https://www.netmeds.com/images/category/v1/3420/thumb/shaving.jpg",
+              "title": "Shaving"
+              },
+               {
+                "id": 2,
+                   "img": "https://www.netmeds.com/images/category/v1/3002/thumb/razors_cartridges_2.jpg",
+                "title": "Razors Cartridges"
+               },
+               {
+                "id": 3,
+                   "img": "https://www.netmeds.com/images/category/v1/3591/thumb/beard_oil_2.jpg",
+                "title": "Beard Oil"
+         },
+               {
+                "id": 4,
+                   "img": "https://www.netmeds.com/images/category/v1/3593/thumb/beard_wash_2.jpg",
+                "title": "Beard Wash" 
+               },
+               {
+                "id": 5,
+                "img": "https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_2.jpg",
+                "title": "Hair Gels Waxes"}
+             ]},
+             {"name":" " , 
+             "arr":[
+                 {
+                  "id": 1,
+                     "img": "https://www.netmeds.com/images/cms/magefan_blog/nmslite/1668075987_Makeup-Removal_480x180.jpg",
+                  "title": "",
+                  "desc":"How To Remove Makeup Completely? 5 Common Mistakes.."
+                },
+                 {
+                  "id": 2,
+                     "img": "https://www.netmeds.com/images/cms/magefan_blog/nmslite/1667922821_Skin-Healing-Benefits_480x180.jpg",
+                     "desc":"Peptides: Discover The Uses, Skin Healing Benefits.."
+                 },
+                 {
+                  "id": 3,
+                     "img": "https://www.netmeds.com/images/cms/magefan_blog/nmslite/1667483336_Chapped-Kissers_480x180.jpg",
+                     "desc":"How to Heal Chapped Lips? A Dash Of Coffee For You.."
+               },
+               {
+                  "id":"4",
+                  "img":"https://www.netmeds.com/images/cms/magefan_blog/nmslite/1667208858_Sodium_480x180.jpg"
+                  ,"desc":"Sodium For Health: Use The Right Amount Of Salt Fo..",
+                  "view":"null"
+               }
+               ]}
+
+    ]
+         }
+  
