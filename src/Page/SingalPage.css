@@ -1,0 +1,81 @@
+.container{
+    width: 99%;
+    margin: auto;
+    /* border:1px solid red; */
+}
+.conatinerbox{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    /* border:2px solid green; */
+}
+.conatinerbox>div{
+    width: 90%;
+    margin: auto;
+    /* border:2px solid blue; */
+}
+.detailsbox{
+
+}
+.detailsbox>div{
+    width:95%;
+    padding:1rem 1rem;
+    margin:auto;
+    line-height: 2;
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-radius:10px;
+}
+
+.detailsbox>div>h1{
+    font-size: 1.5rem;
+}
+.detailsbox>div>h4{
+    font-size: 1rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.detailsbox>div>h4>span{
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: #cfd8dc;
+    margin-left: 20px;
+    color:teal;
+}
+.addtocartbtn{
+    background-color:#0dcaf0;
+    height:45px;
+    color:white;
+    width: fit-content;
+    padding:10px 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+
+
+
+
+.detailsbox>div:nth-child(2)
+{
+    text-align: left;
+}
+.detailsbox>div:nth-child(2)>h1
+{
+    font-weight: bold;
+}
+.detailsbox>div:nth-child(2)>h1>span:last-child
+{
+    color:#f06292;
+}
+.detailsbox>div:nth-child(2)>h5>span:last-child
+{
+    text-decoration: line-through;
+
+}
+
+
