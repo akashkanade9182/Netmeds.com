@@ -54,7 +54,7 @@
       "category": "Personal Care",
       "subcategory": "Face Care",
       "brand": "Active_beaute",
-      "quantity": 1,
+      "quantity": 3,
       "id": 1
     },
     {
@@ -65,7 +65,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Active_beaute",
-      "quantity": 0,
+      "quantity": 6,
       "id": 2
     },
     {
@@ -76,7 +76,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Active_beaute",
-      "quantity": 0,
+      "quantity": 1,
       "id": 3
     },
     {
@@ -87,7 +87,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Active_beaute",
-      "quantity": 0,
+      "quantity": 1,
       "id": 4
     },
     {
@@ -98,7 +98,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Arata",
-      "quantity": 0,
+      "quantity": 1,
       "id": 5
     },
     {
@@ -109,7 +109,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Arata",
-      "quantity": 0,
+      "quantity": 1,
       "id": 6
     },
     {
@@ -120,7 +120,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Arata",
-      "quantity": 0,
+      "quantity": 1,
       "id": 7
     },
     {
@@ -131,7 +131,7 @@
       "category": "PersonalCare",
       "subcategory": "Face Care",
       "brand": "Aryanveda",
-      "quantity": 0,
+      "quantity": 1,
       "id": 8
     },
     {
@@ -329,7 +329,7 @@
       "category": "Fitness",
       "subcategory": "Family Nutrition",
       "brand": "Aiwo ",
-      "quantity": 0,
+      "quantity": 1,
       "id": 26
     },
     {
@@ -340,7 +340,7 @@
       "category": "Fitness",
       "subcategory": "Family Nutrition",
       "brand": "Aiwo ",
-      "quantity": 0,
+      "quantity": 1,
       "id": 27
     },
     {
@@ -351,7 +351,7 @@
       "category": "Fitness",
       "subcategory": "Family Nutrition",
       "brand": "B-Protin",
-      "quantity": 0,
+      "quantity": 1,
       "id": 28
     },
     {

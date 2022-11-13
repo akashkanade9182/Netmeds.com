@@ -11,6 +11,7 @@ const Navbar = () => {
   const [username, setUsername] = useState("");
   const [query, setQuery] = useState("")
   const [suggestions, setSuggestions] = useState([])
+  const shift=useNavigate();
 
   const querhandler = useCallback((val)=>{
     setQuery(val)
@@ -28,6 +29,9 @@ useEffect(()=>{
     setSuggestions(newSuggestion)
   }
 },[query])
+const handleNavigatetoCart=()=>{
+  shift("/cart");
+}
 
 
 
@@ -51,6 +55,11 @@ useEffect(()=>{
       }
     });
   };
+
+
+  const handleNavigatewellness=()=>{
+    shift("/categorypage")
+  }
 
 
 
@@ -96,6 +105,7 @@ useEffect(()=>{
             <Text style={{ color: "white" }}>Upload</Text>
           </Button>
           <Button
+          onClick={handleNavigatetoCart}
             style={{
               backgroundColor: "transparent",
               border: "none",
@@ -166,6 +176,7 @@ useEffect(()=>{
               fontSize: "14px",
               gap: "4px",
             }}
+            onClick={handleNavigatewellness}
           >
             <Image
               src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"

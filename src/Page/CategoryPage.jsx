@@ -6,6 +6,8 @@ import {getUrlData} from "../Redux/action"
 import { useLocation } from 'react-router-dom'
 import{useSearchParams} from "react-router-dom"
 import Card from '../Components/Card';
+import Navbar from '../HomePage/Navbar/Navbar';
+import Footer from "../HomePage/Navbar/Footer"
 import "./PersonalCare.css"
 
 const catArray=[
@@ -110,6 +112,7 @@ const CategoryPage = () => {
  
   return (
     <div className='cat'>
+      <Navbar/>
       <div className='catbox'>
         <h1>Popular Categories</h1>
         <div className='cattrain'>
@@ -150,6 +153,7 @@ const CategoryPage = () => {
 </div>
 
       </div>
+      <Footer/>
 
 
     </div>

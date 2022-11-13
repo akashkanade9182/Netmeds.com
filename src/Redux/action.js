@@ -72,7 +72,7 @@ export const addOneProduct=(id,params)=>(dispatch)=>{
 const getCart=(queryparams)=>(dispatch)=>{
 
     dispatch(getCartRequst());
-    return axios.get(`http://localhost:8081/products`,queryparams).then((r)=>{
+    return axios.get(`http://localhost:8080/products`,queryparams).then((r)=>{
         dispatch({type:types.EDIT_PRODUCT_SUCCESS,payload:r.data})
      }).catch((e)=>{
          dispatch({type:types.EDIT_PRODUCT_FAILURE,payload:e})
