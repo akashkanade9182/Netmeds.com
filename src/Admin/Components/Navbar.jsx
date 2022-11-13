@@ -9,13 +9,23 @@ const Navbar = () => {
     return (
         <div style={{ display: "flex", padding: "0 10px", position: "relative" }}>
             <div className="navbar-title">
-                <Link to='/'>
+                <Link to='/admin'>
                     Product Dashboard
                 </Link>
             </div>
-            <div style={{ position: "absolute", right: "30px", top: "12px", display: 'flex', gap: '30px' }}>
+
+            
+            <div style={{ position: "absolute", right: "120px", top: "12px", display: 'flex', gap: '30px' }}>
                <Link to='/add'>   <button  className='navbar-add-product-btn'>
                      Add Product
+                </button>
+                </Link> 
+
+              
+            </div>
+            <div style={{ position: "absolute", right: "30px", top: "12px", display: 'flex', gap: '30px' }}>
+               <Link to='/'>   <button  className='navbar-log-product-btn '>
+                    Logout
                 </button>
                 </Link> 
 

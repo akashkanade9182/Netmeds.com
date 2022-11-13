@@ -9,7 +9,7 @@ export const BeautyComponent = () => {
     useEffect(()=>{
       setRes(db.data)
     },[])
-    // console.log(res)
+    
     return (
         <>
      

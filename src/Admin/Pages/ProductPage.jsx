@@ -4,6 +4,7 @@ import { useLocation, useSearchParams } from 'react-router-dom';
 import ProductCard from '../Components/ProductCard';
 import { Get } from '../../Redux/action'
 import './productpage.css'
+import Navbar from '../Components/Navbar';
 
 const ProductPage = () => {
     const products = useSelector((state)=>state.products)
@@ -20,7 +21,8 @@ console.log("jn",products)
 {if(isLoading){return <div>Loading...</div>} }
 
     return (
-        <div >
+        <div >  
+            <Navbar/>
             <div className='product-cards'>
                 <table className='table table-striped'>
                     <thead >

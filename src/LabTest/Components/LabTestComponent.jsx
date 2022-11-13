@@ -83,18 +83,63 @@ export const LabTestComponent = () => {
     </div> */}
 
 
-    <div className='rounded  m-5 p-4'>
+    <div className='rounded  mx-5 p-4'>
         <Text>Customer Speak</Text>
         <p className='my-2 text-secondary'>
 Customers Speak Customer satisfaction is our prime focus. We would like to hear your comments about our service.</p>
-<div className='row'>
-    <div style={{height:'500px'}} className='col border'></div>
+<div style={{width:"95%"}} className=' container-fluid   p-5'>
+    <div  className='row  gap-5 '>
+   
+<div style={{border:"1px solid #03b0b0 ",boxShadow: " rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px"}} className='bg-white col rounded  px-4 py-2'>
+<div className='d-flex justify-content-between'><div ><p className='fs-4 fw-semibold'>Manzoor</p>
+        <p style={{color:"#03b0b0"}}>Mumbai</p>
+        </div>
+       <img style={{width:"100px",height:"20px"}} className="my-2" src="https://tse4.mm.bing.net/th?id=OIP.AFf7OAKmeUfgBhl61z950AHaBY&pid=Api&P=0" alt="" /></div>
+        <hr style={{borderTop: "2px dashed teal"}} className="my-3 fw-bold"/>
+        <div>
+       <img width={"25px"} src="https://tse4.mm.bing.net/th?id=OIP.AfjRWP1tjXFur4cNX4ap8wHaGL&pid=Api&P=0" alt="" />
+        <p  className='mt-2 '> <span  style={{marginLeft:"30px"}}>This is the best lab test experience ever! The process seemed so off-putting. But with Netmeds it has been so easy and professional!</span>
+
+</p>
+        </div>
+    </div>
+
+  
+<div style={{border:"1px solid #03b0b0 ",boxShadow: " rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px"}} className='bg-white col rounded  px-4 py-2'>
+<div className='d-flex justify-content-between'><div ><p className='fs-4 fw-semibold'>Rajiv Singh</p>
+        <p style={{color:"#03b0b0"}}>Delhi</p>
+        </div>
+       <img style={{width:"100px",height:"20px"}} className="my-2" src="https://tse4.mm.bing.net/th?id=OIP.AFf7OAKmeUfgBhl61z950AHaBY&pid=Api&P=0" alt="" /></div>
+           <hr style={{borderTop: "2px dashed teal"}} className="my-3 fw-bold"/>
+        <div>
+       <img width={"25px"} src="https://tse4.mm.bing.net/th?id=OIP.AfjRWP1tjXFur4cNX4ap8wHaGL&pid=Api&P=0" alt="" />
+        <p  className='mt-2'> <span  style={{marginLeft:"30px"}}>I've done lab tests before. The process seemed so </span> off-putting. But with Netmeds it has been so easy and professional! I highly recommend Netmeds Swasthya package. Value for money!
+
+</p>
+        </div>
 </div>
+
+<div style={{border:"1px solid #03b0b0 ",boxShadow: " rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px"}} className='bg-white col rounded  px-4 py-2'>
+<div className='d-flex justify-content-between'><div ><p className='fs-4 fw-semibold'>Kiran Chakravarti</p>
+        <p style={{color:"#03b0b0"}}>Chennai</p>
+        </div>
+       <img style={{width:"100px",height:"20px"}} className="my-2" src="https://tse4.mm.bing.net/th?id=OIP.AFf7OAKmeUfgBhl61z950AHaBY&pid=Api&P=0" alt="" /></div>
+        <hr style={{borderTop: "2px dashed teal"}} className="my-3 fw-bold"/>
+        <div>
+       <img width={"25px"} src="https://tse4.mm.bing.net/th?id=OIP.AfjRWP1tjXFur4cNX4ap8wHaGL&pid=Api&P=0" alt="" />
+        <p  className='mt-2'> <span  style={{marginLeft:"30px"}}>In Netmeds, The phlebotomist took great care </span>when drawing the blood etc. He was very reassuring! The process went very smoothly.
+
+</p>
+        </div>
+</div>
+    </div>
+  
+  </div>
     </div>
 
 
     <div className='rounded  m-5 p-4'>
-        <Text>Our Highlights</Text>
+        <Text className='my-4'>Our Highlights</Text>
        <div className='row'>
        <div style={{height:'2x00px'}} className='col  d-flex gap-3'>
        <div  className=' col w-100 p-3 bg-white d-flex flex-wrap align-items-center gap-3'><img  src={"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>Home Sample Collection</h1></div>

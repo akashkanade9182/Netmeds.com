@@ -10,7 +10,7 @@ const navigate = useNavigate()
                 <div style={{ display: "flex", alignItems: "center", width: "80%", margin: "auto", justifyContent: "space-between", padding: "16px 0px 16px" }}>
                     <img onClick={()=>{navigate('/')}} style={{ backgroundColor: "#32aeb1", height: "60px", width: "168px" }} src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="Netmeds" />
                     <SearchBar />
-                    <button style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px" }}>
+                    <button  onClick={()=>{navigate('/loginAdmin')}}  style={{ backgroundColor: "transparent", border: "none", display: "flex", alignItems: "center", fontSize: "14px" }}>
                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg" alt="upload" />
                         <b style={{color:"white"}}>Upload</b>
                     </button>

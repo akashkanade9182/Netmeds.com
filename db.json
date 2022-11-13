@@ -87,6 +87,28 @@
       "MRP": 300,
       "quantity": 0,
       "id": 8
+    },
+    {
+      "title": "active Beauty face wash",
+      "image": "https://www.netmeds.com/images/product-v1/600x600/1016405/arata_hydration_boost_aloe_vera_gel_combo_with_aloe_vera_face_gel_100_ml_under_eye_gel_10_ml_110_ml_0_0.jpg",
+      "category": "Personal Care",
+      "subcategory": "Face Care",
+      "brand": "Aryanveda",
+      "price": "350",
+      "MRP": "360",
+      "quantity": "1",
+      "id": 9
+    },
+    {
+      "title": "ayur moisturizer",
+      "image": "https://www.netmeds.com/images/product-v1/600x600/829453/ayur_herbal_moisturizer_lotion_100_ml_0.jpg",
+      "category": "Personal Care",
+      "subcategory": "moisturizer",
+      "brand": "ayur",
+      "price": "450",
+      "MRP": "429",
+      "quantity": "2",
+      "id": 10
     }
   ],
   "products": [

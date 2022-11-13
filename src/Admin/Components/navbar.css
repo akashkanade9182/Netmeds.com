@@ -14,7 +14,15 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
+.navbar-log-product-btn{
+    border: 1px solid black;
+    background-color: tomato;
+    font-size: 16px;
+    color: white;;
+    padding: 0px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .navbar-cart-count{
     position: absolute;
     width: 20px;

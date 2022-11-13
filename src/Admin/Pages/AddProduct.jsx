@@ -3,26 +3,10 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { Add } from "../../Redux/action";
+import { Add, Get } from "../../Redux/action";
 const AddProduct = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch();
-//     "title": "Activ Beaute Brightening Face Wash 100 ml",
-//     "image": "https://www.netmeds.com/images/product-v1/600x600/1068181/alyuva_ghee_enriched_natural_peach_lip_balm_for_all_ages_7_gm_502156_0_0.jpg",
-//     "category": "PersonalCare",
-//     "subcategory": "Face Care",
-//     "brand": "Active_beaute",
-//     "price": 245,
-//     "MRP": 300,
-//     "quantity": 0,
-//     "id": 8
-//   },
-//   {
-//     "name": "",
-//     "category": "",
-//     "image": "",
-//     "price": "",
-//     "id": 9
     const [state,setState] = useState({
         title:'',
         image:'',
@@ -42,11 +26,19 @@ const AddProduct = () => {
     }
 const handleSubmit = ()=>{
     const value = ({title,image,category,subcategory,brand,price,MRP,quantity})
+    if(title!=""&&image!=""&&subcategory!=''&&brand!=''&&price!=''&&MRP!="")
+    {
     dispatch(Add(value)).then((r)=>console.log("Login Success",r))
-    navigate('/')
+    dispatch(Get())
+    navigate('/admin')
+    }
+    else
+    {
+        alert("Please fill all the Inputs")
+    }
 }
     return (
-        <div className=" w-50 m-auto py-4 border bg-light rounded " >
+        <div className=" w-50 m-auto py-4 border bg-light rounded my-5 " >
             <div className="text-center mb-4 fs-4 fw-bolder   ">Add Products</div>
             <FormWrap>
                 <Elem >
@@ -90,12 +82,12 @@ const handleSubmit = ()=>{
 
                 <Elem>
                     <Label>MRP :-</Label>
-                    <input className="border" name='MRP' onChange={handleChange} value={MRP}   type="number" />
+                    <input className="border " required name='MRP' onChange={handleChange} value={MRP}   type="number" />
                 </Elem>
 
                 <Elem>
                     <Label>Quantity :-</Label>
-                    <select className="border" name="quantity" onChange={handleChange}  value={quantity} >
+                    <select className="border" required name="quantity" onChange={handleChange}  value={quantity} >
                        <option value="">quantity</option>
                         <option value="0">0</option>
                        <option value="1">1</option>
@@ -104,9 +96,10 @@ const handleSubmit = ()=>{
                     </select>
                     {/* <input className="border" name='quantity' onChange={handleChange} value={quantity}   type="number" /> */}
                 </Elem>
-
+<div className="d-flex gap-5">
+                <input type="button" value="Go Back" onClick={()=>navigate("/admin")} className="btn btn-danger fw-bold d-flex px-5 my-5 m-auto"/>
                 <input type="button" value="Submit" onClick={()=>handleSubmit()} className="btn btn-success fw-bold d-flex px-5 my-5 m-auto"/>
-                
+                </div>         
             </FormWrap>
         </div>
     );
