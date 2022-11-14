@@ -121,9 +121,9 @@ const handleNavigate=()=>{
               <div className='totalpricebox'>
                 <h1>PAYMENT DETAILS</h1>
                 <div className='calculatebox'>
-                  <div><span>Mrp total:-</span><span>-{totalMrp}</span></div>
+                  <div><span>Mrp total:-</span><span>{totalMrp}</span></div>
                   <div><span>Netmed Discount:-</span><span>-{totalMrp-totalprice}</span></div>
-                  <div><span>Total Amount:-</span><span>-{totalprice}</span></div>
+                  <div><span>Total Amount:-</span><span>{totalprice}</span></div>
                 </div>
                 <div className='totalsave'>
                 TOTAL SAVINGS RS.{totalMrp-totalprice}

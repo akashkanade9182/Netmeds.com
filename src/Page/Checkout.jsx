@@ -40,15 +40,7 @@ const Account = () => {
 const handlCheckout=()=>{
     return (
         <>
-        <Stack spacing={3}>
-
-
-        <Alert status='success' variant='solid'>
-            <AlertIcon />
-            Checkout successful
-        </Alert>
-        
-        </Stack>
+     
         </>
     )
 
@@ -79,6 +71,7 @@ const handlCheckout=()=>{
   return (
     <>
       <Navbar />
+      
       <div className="container">
         <div>
           <Heading as="h3" size="lg">

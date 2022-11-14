@@ -25,7 +25,7 @@ const datasuccess=(val)=>{
 }
 const getFinal=(queryparams)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.get(`  http://localhost:8080/products`,queryparams).then((r)=>{
+    return axios.get(` https://netmeddata.onrender.com/products`,queryparams).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
@@ -34,7 +34,7 @@ const getFinal=(queryparams)=>(dispatch)=>{
 
 const getdata=(queryparams)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.get(`  http://localhost:8080/products`,queryparams).then((r)=>{
+    return axios.get(` https://netmeddata.onrender.com/products`,queryparams).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
@@ -42,7 +42,7 @@ const getdata=(queryparams)=>(dispatch)=>{
 }
 const getUrlData=(queryparams,data,range=10000)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.get(`http://localhost:8080/products?category=${data}&&price_lte=${range}`,queryparams).then((r)=>{
+    return axios.get(`https://netmeddata.onrender.com/products?category=${data}&&price_lte=${range}`,queryparams).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
@@ -51,7 +51,7 @@ const getUrlData=(queryparams,data,range=10000)=>(dispatch)=>{
 
 const getOneProduct=(id)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.get(`http://localhost:8080/products/${id}`).then((r)=>{
+    return axios.get(`https://netmeddata.onrender.com/products/${id}`).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
@@ -61,7 +61,7 @@ const getOneProduct=(id)=>(dispatch)=>{
 
 export const addOneProduct=(id,params)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.post(`http://localhost:8080/products/${id}`,params).then((r)=>{
+    return axios.post(`https://netmeddata.onrender.com/products/${id}`,params).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
@@ -72,7 +72,7 @@ export const addOneProduct=(id,params)=>(dispatch)=>{
 const getCart=(queryparams)=>(dispatch)=>{
 
     dispatch(getCartRequst());
-    return axios.get(`http://localhost:8080/products`,queryparams).then((r)=>{
+    return axios.get(`https://netmeddata.onrender.com/products`,queryparams).then((r)=>{
         dispatch({type:types.EDIT_PRODUCT_SUCCESS,payload:r.data})
      }).catch((e)=>{
          dispatch({type:types.EDIT_PRODUCT_FAILURE,payload:e})
@@ -82,7 +82,7 @@ const getCart=(queryparams)=>(dispatch)=>{
 
 const  addCart=(payload)=>(dispatch)=>{
      dispatch({type:types.ADD_PRODUCT_REQUEST});
-   axios.post(`http://localhost:8080/products`,payload)
+   axios.post(`https://netmeddata.onrender.com`,payload)
      .then((r)=>{
        dispatch({type:types.ADD_PRODUCT_SUCCESS,payload:payload})
      }).catch((e)=>{
@@ -92,7 +92,7 @@ const  addCart=(payload)=>(dispatch)=>{
 
 const EditCart=(id,payload)=>(dispatch)=>{
     dispatch({type:types.PATCH_PRODUCT_REQUEST});
-        return axios.patch(`http://localhost:8080/products/${id}`,payload)
+        return axios.patch(`https://netmeddata.onrender.com/products/${id}`,payload)
         .then((r)=>{
             // dispatch({type:types.PATCH_PRODUCT_SUCCESS,payload:r.data})
 

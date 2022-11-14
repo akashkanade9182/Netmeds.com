@@ -16,6 +16,44 @@ import {
 } from '@chakra-ui/react'
 
 
+
+
+
+const catArray=[
+  {
+    Path:"/personalcare",
+    image:"https://www.netmeds.com/images/category/v1/3902/thumb/face_personal_care.jpg",
+    name:"Personal Care"
+  },
+  {
+    Path:"/fitness",
+    image:"https://www.netmeds.com/images/product-v1/150x150/848569/vidavance_vanilla_powder_400gm_0_1.jpg",
+    name:"Fitness"
+  },
+  {
+    Path:"/treatment",
+    image:"https://www.netmeds.com/images/product-v1/150x150/962997/st_johns_industrial_first_aid_kit_stainless_steel_box_small_sjf_s2_0_0.jpg",
+    name:"Treatment"
+  },
+  {
+    Path:"/personalcare",
+    image:"https://www.netmeds.com/images/product-v1/600x600/851495/sri_sri_tattva_jantughna_vati_500_mg_tablets_100s_0_1.jpg",
+    name:"Wellness"
+  },
+  {
+    Path:"/personalcare",
+    image:"https://www.netmeds.com/images/product-v1/150x150/940230/loreal_paris_excellence_creme_hair_color_3_dark_brown_natural_darkest_brown_100gm70ml_185010_0_2.jpg",
+    name:"Hair"
+  }
+ 
+
+];
+
+
+
+
+
+
 const PersonalCare = () => {
     const dispatch=useDispatch();
     const products=useSelector(store=>store.products);
@@ -28,7 +66,7 @@ const PersonalCare = () => {
     const[sort,setSort]=useState(searchParams.get("sortBy")||"")
     const[Brand,setBrand]=useState(searchParams.getAll("brand"));
     const[count,setCount]=useState(0)
-    
+    const isLoading=useSelector(store=>store.isLoading)
 const catarray=['Active_beaute', 'Arata', 'Aryanveda', 'Avene', 'Beardo', 'Agrawal', 'Aroma', 'Ayur', 'Alyuva', 'Atulya']
 const countarray=[3, 5, 3, 1, 1, 1, 1, 1, 1, 1]
 
@@ -152,12 +190,15 @@ const handleRemoveProduct=(id,quantity)=>{
         navigate(`/personalcare/${id}`)
         // console.log(id)
       }
-      
+   
     
 
   return (
     <div className='categorypage'>
+      
       <Navbar/>
+      {}
+      
          <div className='categorypagebox'>
             <Sidebar props={{setBrand,setRange,minvalue,maxvalue,catarray,countarray,setSort}} />
             <div className='productsbox'>

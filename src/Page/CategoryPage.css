@@ -39,3 +39,11 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 .carttrainbox>img{
     width: 100%;
 }
+.catgeorygridbox{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 3fr));
+    justify-items: center;
+    gap: 10px;
+}

@@ -159,7 +159,7 @@ const handleRemoveProduct=(id,quantity)=>{
 
 
       const handleNavigate=(id)=>{
-        navigate(`/personalcare/${id}`)
+        navigate(`/fitness/${id}`)
         // console.log(id)
       }
       
