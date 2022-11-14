@@ -55,7 +55,7 @@ const Clickremove=(id,quantity)=>{
         
     
        {
-         quantity===0 ? <button  className={state>0?'disablecartbtn':`addcartbtn`} onClick={()=>Click(id)}>Add To Card</button>:<div className='countingbox'>
+         quantity===0 ? <button  className={`addcartbtn`} onClick={()=>Click(id)}>Add To Card</button>:<div className='countingbox'>
          <button onClick={()=>Clickadd(id,quantity)}>+</button>
           <div className='quantbox'>{quantity}</div>
         <button onClick={()=>Clickremove(id,quantity)}>-</button>

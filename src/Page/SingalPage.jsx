@@ -5,6 +5,9 @@ import{useParams} from "react-router-dom"
 
   import {useSelector,useDispatch} from "react-redux"
 import { getOneProduct,addOneProduct } from "../Redux/action"
+import Navbar from "../HomePage/Navbar/Navbar"
+import Footer from "../HomePage/Navbar/Footer"
+
 import "./SingalPage.css"
   
 
@@ -30,6 +33,7 @@ const SingalPage=()=>{
     }
     return (
     <div className="container">
+      <Navbar/>
        <div className="conatinerbox">
 
         <div className="imagebox">
@@ -57,6 +61,7 @@ const SingalPage=()=>{
         </div>
 
        </div>
+       <Footer/>
 
     </div>
     )
