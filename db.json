@@ -109,6 +109,17 @@
       "MRP": "429",
       "quantity": "2",
       "id": 10
+    },
+    {
+      "title": "ayur",
+      "image": "https://www.netmeds.com/images/product-v1/600x600/829453/ayur_herbal_moisturizer_lotion_100_ml_0.jpg",
+      "category": "Personal Care",
+      "subcategory": "moisturizer",
+      "brand": "Aryanveda",
+      "price": "350",
+      "MRP": "360",
+      "quantity": "2",
+      "id": 11
     }
   ],
   "products": [

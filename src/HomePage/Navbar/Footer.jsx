@@ -10,11 +10,9 @@ const Footer = () => {
 
     return (
         <div style={{ width: "90%", margin: "auto", marginTop: "40px", marginBottom: "40px" }}>
-            <div style={{ display: "flex", gap: "40px" }}>
-                <Box boxSize='sm'>
-                    <Image src='https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg' alt='Dan Abramov' />
-                </Box>
-                <div>
+            <div style={{ display: "flex",justifyContent:"space-between" ,gap:"10%" }} className="my-5">
+                  <Image src='https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg' alt='Dan Abramov' />
+                <div >
                     <Text color="#0b1219" noOfLines={[1, 2]} style={{ textAlign: "left", width: "75%", lineHeight: "24px", color: "#0b1219" }}>
                         Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India.
                     </Text>

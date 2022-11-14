@@ -7,17 +7,18 @@ export const LabTestComponent = () => {
     ]
 
     const Imgs = [
-        {title:"Complete Hemogram",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Liver Profile",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Diabetes",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Lipid Profile",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Thyroid Profile",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
+        {title:"Complete Hemogram",img:"https://tse4.mm.bing.net/th?id=OIP.wUub92vHdwmSdk_D6BxSTwHaHa&pid=Api&P=0"},
+        
+        {title:"Thyroid Profile",img:"https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg"},
+        {title:"Lipid Profile",img:"https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg"},
+        {title:"Liver Profile",img:"https://www.netmeds.com/assets/gloryweb/images/icons/health-library.svg"},
+        {title:"Diabetes",img:"https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg"},
     ]
     const Img1s = [
-        {title:"Iron Deficiency",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Vitamin",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Testosterone",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
-        {title:"Kidney Function Test",img:"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"},
+        {title:"Iron Deficiency",img:"https://www.netmeds.com/images/cms/offers/1657030565_Simpl_Icon.png"},
+        {title:"Vitamin",img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1"},
+        {title:"Testosterone",img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1"},
+        {title:"Kidney Function Test",img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1"},
     ]
     return (
         <>
@@ -64,10 +65,10 @@ export const LabTestComponent = () => {
     <p className='my-4 text-secondary'>and many more tests and packages <span className='fw-bold '>@ THE BEST PRICES</span> </p>
     </div> <div  className="container-fluid" >
   <div class="row  mb-5 ">
-    {Imgs?.map((i)=>  <div  className=' col w-100  d-flex flex-wrap align-items-center gap-2'><img  src={i.img} alt={i.title} />{i.title}</div>)}    
+    {Imgs?.map((i)=>  <div  className=' col w-100  d-flex flex-wrap align-items-center gap-2'><img  width={"40px"}  src={i.img} alt={i.title} />{i.title}</div>)}    
   </div>
   <div class="row  ">
-    {Img1s?.map((i)=>  <div  className=' col w-100   d-flex flex-wrap align-items-center gap-2'><img src={i.img} alt={i.title} />{i.title}</div>)}    
+    {Img1s?.map((i)=>  <div  className=' col w-100   d-flex flex-wrap align-items-center gap-2'><img width={"40px"} src={i.img} alt={i.title} />{i.title}</div>)}    
   </div>
 </div>
 </div>
@@ -142,10 +143,10 @@ Customers Speak Customer satisfaction is our prime focus. We would like to hear 
         <Text className='my-4'>Our Highlights</Text>
        <div className='row'>
        <div style={{height:'2x00px'}} className='col  d-flex gap-3'>
-       <div  className=' col w-100 p-3 bg-white d-flex flex-wrap align-items-center gap-3'><img  src={"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>Home Sample Collection</h1></div>
-       <div  className=' col w-100 p-3  bg-white d-flex flex-wrap align-items-center gap-3'><img  src={"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>2000+ Location Served</h1></div>
-       <div  className=' col w-100 p-3  bg-white d-flex flex-wrap align-items-center gap-3'><img  src={"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>NABL, CAP ISO Certified</h1></div>
-       <div  className=' col w-100 p-3  bg-white d-flex flex-wrap align-items-center gap-3'><img  src={"https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>Upto 80% Discount</h1></div>
+       <div  className=' col w-100  bg-white d-flex flex-wrap align-items-center '><img width={"60px"}  src={"https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>Home Sample Collection</h1></div>
+       <div  className=' col w-100 p-3  bg-white d-flex flex-wrap align-items-center gap-3'><img width={"30px"}  src={"https://tse1.mm.bing.net/th?id=OIP.DcBu8Z91W3ij4nIoBwi0kAHaJT&pid=Api&P=0"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>2000+ Location Served</h1></div>
+       <div  className=' col w-100 p-3  bg-white d-flex flex-wrap align-items-center gap-3'><img width={"50px"} src={"https://tse2.mm.bing.net/th?id=OIP.jQgvE8ERQcELp4IriOnpgQHaH6&pid=Api&P=0"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>NABL, CAP ISO Certified</h1></div>
+       <div  className=' col w-100 p-3  bg-white d-flex flex-wrap align-items-center gap-3'><img  width={"50px"} src={"https://tse3.mm.bing.net/th?id=OIP.gSpaNcJx_orHDUZHDTOcUQHaE_&pid=Api&P=0"} alt="" /><h1 style={{fontWeight:"bold",fontSize:"20px"}}>Upto 80% Discount</h1></div>
 
 
        </div>
