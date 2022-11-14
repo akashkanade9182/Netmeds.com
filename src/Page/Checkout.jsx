@@ -23,6 +23,7 @@ const Account = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
+  const shift=useNavigate();
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
@@ -38,11 +39,8 @@ const Account = () => {
 
 
 const handlCheckout=()=>{
-    return (
-        <>
-     
-        </>
-    )
+    alert("your product is delivered")
+    shift("/personalcare")
 
     
 
