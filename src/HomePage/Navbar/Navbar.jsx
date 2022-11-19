@@ -61,6 +61,16 @@ const handleNavigatetoCart=()=>{
     shift("/categorypage")
   }
 
+  const handleNavigateBeauty=()=>{
+    shift("/beauty")
+  }
+  const handleNavigateLabtest=()=>{
+    shift("./labtest")
+  }
+  const handleNavigateUpload=()=>{
+    shift("./adminlogin")
+  }
+
 
 
   return (
@@ -84,12 +94,13 @@ const handleNavigatetoCart=()=>{
                 height: "60px",
                 width: "168px",
               }}
-              src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
+              src="https://www.canva.com/design/DAFR6lZIIm0/ONfwYqLvsFutrtWO53W0Pg/view?utm_content=DAFR6lZIIm0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               alt="Netmeds"
             /></Link> 
          
           <SearchBar querhandler={querhandler} suggestions={suggestions} />
         <Button
+        onClick={handleNavigateUpload}
             style={{
               backgroundColor: "transparent",
               border: "none",
@@ -185,6 +196,7 @@ const handleNavigatetoCart=()=>{
             <Text>Wellness</Text>
           </Button>
           <Button
+          onClickCapture={handleNavigateLabtest}
             style={{
               backgroundColor: "transparent",
               border: "none",
@@ -201,6 +213,7 @@ const handleNavigatetoCart=()=>{
             <Text>Lab Tests</Text>
           </Button>
           <Button
+          onClick={handleNavigateBeauty}
             style={{
               backgroundColor: "transparent",
               border: "none",

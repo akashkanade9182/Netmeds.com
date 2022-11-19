@@ -106,6 +106,47 @@ const EditCart=(id,payload)=>(dispatch)=>{
 
 
 
+
+/*******************************Admin Data*************************** */
+
+
+
+
+
+
+export const Add = (payload)=>(dispatch)=>
+{
+ 
+dispatch({type:types.ADD_PRODUCT_REQUEST1})
+
+return axios
+.post("https://netmeddata.onrender.com/products",payload)
+.then(()=> { return dispatch({type:types.ADD_PRODUCT_SUCCESS1})})
+.catch((err)=>{return dispatch({type:types.ADD_PRODUCT_FAILURE1,payload:err})})
+}
+
+export const Get = () => (dispatch) =>{
+    dispatch({type:types.GET_PRODUCTS_REQUEST1})
+    return axios 
+    .get("https://netmeddata.onrender.com/products")
+    .then((r)=> { return dispatch({type:types.GET_PRODUCTS_SUCCESS1,payload:r.data})})
+    .catch((err)=>{return dispatch({type:types.GET_PRODUCTS_FAILURE1,payload:err})})
+   }
+
+
+
+   export const Del=(id)=>(dispatch)=> {
+    dispatch({type:types.DELETE_PRODUCT_REQUEST1})
+    return fetch(`https://netmeddata.onrender.com/products/${id}`,{
+      method:"DELETE",  
+    })
+    .then((r)=> { return dispatch({type:types.DELETE_PRODUCT_SUCCESS1})})
+    .catch((err)=>{return dispatch({type:types.DELETE_PRODUCT_FAILURE1,payload:err})})
+   }
+
+
+
+
 const deletedata=(id)=>(dispatch)=>{
     // dispatch({type:types.DELETE_PRODUCT_REQUEST})
     // return axios.delete(`http://localhost:8080/products/${id}`)

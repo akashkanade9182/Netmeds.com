@@ -78,6 +78,20 @@ export const reducer = (state = initialState,action) => {
                 
                 
               }
+              case types.ADD_PRODUCT_REQUEST1:
+                return {
+                  ...state,
+                  isLoading:true
+                }
+              case types.ADD_PRODUCT_SUCCESS1:return {...state,isLoading:false}
+              case types.ADD_PRODUCT_FAILURE1:return {...state,isLoading:false,products:[],isError:true}
+              case types.GET_PRODUCTS_REQUEST1:return {...state,isLoading:true}
+              case types.GET_PRODUCTS_SUCCESS1:return {...state,isLoading:false,products:payload}
+              case types.GET_PRODUCTS_FAILURE1:return {...state,isLoading:false,products:[],isError:true}
+              case types.DELETE_PRODUCT_REQUEST1:return {...state,isLoading:true}
+              case types.DELETE_PRODUCT_SUCCESS1:return {...state,isLoading:false}
+              case types.DELETE_PRODUCT_FAILURE1:return {...state,isLoading:false,products:[],isError:true}
+                      
 
           
         

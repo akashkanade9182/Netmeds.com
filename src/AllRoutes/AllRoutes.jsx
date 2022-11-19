@@ -12,6 +12,12 @@ import Treatment from "../Page/Treatment"
 import Cart from "../Page/Cart"
 import Checkout from "../Page/Checkout"
 
+import { Beauty } from "../Page/Beauty";
+import { LabTest } from "../Page/LabTest";
+import AdminLogin from "../Page/AdminLogin";
+import { Admin } from "../Page/Admin";
+import AddProduct from "../Page/AddProduct";
+
 const AllRoutes = () => {
   return (
     <div>
@@ -29,7 +35,13 @@ const AllRoutes = () => {
       <Route path="/fitness/:id" element={<SingalPage/>}></Route>
       <Route path="/treatment/:id" element={<SingalPage/>}></Route>
       <Route path="/cart" element={<Cart/>}></Route>    
-      <Route path="/checkout" element={<Checkout/>}></Route>   
+      <Route path="/checkout" element={<Checkout/>}></Route> 
+
+        <Route path="/beauty" element={<Beauty />}></Route>
+              <Route path="/labtest" element={<LabTest/>}></Route>
+              <Route path="/upload" element={<Admin/>}></Route>
+              <Route path="/adminlogin" element={<AdminLogin/>}></Route>
+              <Route path="/addproduct" element={<AddProduct/>}></Route>  
         </Routes>
       
 
