@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import db from "./BeautyData.json"
 import Img from './Img';
 import Img1  from './Img1';
-import Slideshow from '../HomePage/Navbar/SlideShow';
+import Slideshow from "../HomePage/Navbar/SlideShow"
 import 'react-slideshow-image/dist/styles.css'
 export const BeautyComponent = () => {
     const [res,setRes]=useState([]);
