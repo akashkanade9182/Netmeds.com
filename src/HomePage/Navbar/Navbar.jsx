@@ -65,10 +65,10 @@ const handleNavigatetoCart=()=>{
     shift("/beauty")
   }
   const handleNavigateLabtest=()=>{
-    shift("./labtest")
+    shift("/labtest")
   }
   const handleNavigateUpload=()=>{
-    shift("./adminlogin")
+    shift("/adminlogin")
   }
 
 
