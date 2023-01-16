@@ -25,10 +25,9 @@
 <h2>Home Page</h2>
 <img src="https://i-converter.com/temp/230116-1673889949-223.196.192.175-png-jpg/i-converter_com.jpg"/>
 <h2>Login Modal</h2>
-<img src="https://i-converter.com/temp/230116-1673889949-223.196.192.175-png-jpg/i-converter_com.jpg" />
-<h2>Carousels</h2>
-<img src="https://user-images.githubusercontent.com/101570365/193541934-5b3fc5d4-cd69-4023-a45c-041503262921.png"/><br/>
-<img src="https://user-images.githubusercontent.com/101570365/193542114-26e47e6a-62e5-4c43-9d73-9a21a788b4d6.png"/>
+<img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg" />
+<h2>Admin page</h2>
+<img src="https://i-converter.com/temp/230116-1673890959-157.47.48.61-png-jpeg/i-converter_com.jpeg"/>
 <br/>
 <h2>Product Page</h2>
 <img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg"/>
