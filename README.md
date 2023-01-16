@@ -25,13 +25,13 @@
 <h2>Home Page</h2>
 <img src="https://i-converter.com/temp/230116-1673889949-223.196.192.175-png-jpg/i-converter_com.jpg"/>
 <h2>Login Modal</h2>
-<img src="https://user-images.githubusercontent.com/101570365/193541692-153c0a46-533f-4cda-a8bb-307cb118c76d.png" />
+<img src="https://i-converter.com/temp/230116-1673889949-223.196.192.175-png-jpg/i-converter_com.jpg" />
 <h2>Carousels</h2>
 <img src="https://user-images.githubusercontent.com/101570365/193541934-5b3fc5d4-cd69-4023-a45c-041503262921.png"/><br/>
 <img src="https://user-images.githubusercontent.com/101570365/193542114-26e47e6a-62e5-4c43-9d73-9a21a788b4d6.png"/>
 <br/>
 <h2>Product Page</h2>
-<img src="https://user-images.githubusercontent.com/101570365/193543462-c11e1095-9f7b-48c9-b456-939e01b46c5f.png"/>
+<img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg"/>
 <h2>Cart Page</h2>
-<img src="https://user-images.githubusercontent.com/101570365/193543783-4dfe539b-e6ec-4b92-b6fe-65c0a9c6696d.png"/>
+<img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg"/>
 <h2>Payment Page</h2>
