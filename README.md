@@ -20,9 +20,10 @@
 <li>React.Js
 </li><li>Redux</li><li>Chakra-ui</li><li>Styled-Components</li>
 <li>React-Bootstrap</li>
+    
 </ul>
 <h2>Home Page</h2>
-<img src="https://tse3.mm.bing.net/th?id=OIP.fSeDQtvhUKm_dlaC261ZTAHaC9&pid=Api&P=0"/>
+<img src="https://i-converter.com/temp/230116-1673889949-223.196.192.175-png-jpg/i-converter_com.jpg"/>
 <h2>Login Modal</h2>
 <img src="https://user-images.githubusercontent.com/101570365/193541692-153c0a46-533f-4cda-a8bb-307cb118c76d.png" />
 <h2>Carousels</h2>
