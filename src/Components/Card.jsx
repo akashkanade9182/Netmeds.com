@@ -16,22 +16,22 @@ const postdata=(data)=>{
 
 
 
-const Card = ({id,handleNavigate,title,image,category,subcategory,brand,price,MRP,quantity,hadleAddtoCart,handleAddProduct,handleRemoveProduct}) => {
+const Card = ({id,_id,handleNavigate,title,image,category,subcategory,brand,price,MRP,quantity,hadleAddtoCart,handleAddProduct,handleRemoveProduct}) => {
  const dispatch=useDispatch();
  const cart=useSelector(store=>store.cart)
  const [state,setState]=useState(quantity);
  const[count,setCount]=useState(0);
 
 
-const Click=(id)=>{
-  hadleAddtoCart(id)
+const Click=(_id)=>{
+  hadleAddtoCart(_id)
   setCount(prev=>prev+1)
 }
-const Clickadd=(id,quantity)=>{
+const Clickadd=(_id,quantity)=>{
   handleAddProduct(id,quantity)
   setCount(prev=>prev+1)
 }
-const Clickremove=(id,quantity)=>{
+const Clickremove=(_id,quantity)=>{
   handleRemoveProduct(id,quantity)
   setCount(prev=>prev+1)
 }
@@ -45,7 +45,7 @@ const Clickremove=(id,quantity)=>{
 
   return (
     <div className="card" >
-        <img  onClick={()=>handleNavigate(id)} src={image} alt="err" />
+        <img  onClick={()=>handleNavigate(_id)} src={image} alt="err" />
         <h2 className='title'>{title}</h2>
         <p className='categoryname'><span>{category}</span><span>{subcategory}</span></p>
         <p className='pricename'><span>Best Price</span><span>{`Rs.${price}`}</span></p>

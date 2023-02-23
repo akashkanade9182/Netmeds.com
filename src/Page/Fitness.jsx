@@ -13,7 +13,7 @@ import {
   Alert,
   AlertIcon,
   AlertTitle,
-  AlertDescription,
+  AlertDescription,SimpleGrid
 } from '@chakra-ui/react'
 
 
@@ -195,14 +195,14 @@ const handleRemoveProduct=(id,quantity)=>{
                     </div>
             
                 </div>
-                <div className='gridbox'>
-                   {
-                    products && products.map((item,index)=>(
-                      <Card key={index} handleNavigate={()=>handleNavigate(item.id)} hadleAddtoCart={()=>hadleAddtoCart(item.id)} handleAddProduct={()=>handleAddProduct(item.id,item.quantity)} handleRemoveProduct={()=>handleRemoveProduct(item.id,item.quantity)} {...item}/>
-                      ))
-                   }
+                <SimpleGrid columns={[1,2,3,4]} spacing={10} className='gridbox'>
+            {
+              products.length > 0 && products.map((item, index) => (
+                <Card key={index} handleNavigate={() => handleNavigate(item._id)} hadleAddtoCart={() => hadleAddtoCart(item._id)} handleAddProduct={() => handleAddProduct(item._id, item.quantity)} handleRemoveProduct={() => handleRemoveProduct(item._id, item.quantity)} {...item} />
+              ))
+            }
 
-                </div>
+          </SimpleGrid >
             </div>
       
 

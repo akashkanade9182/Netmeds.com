@@ -40,9 +40,10 @@ const getdata=(queryparams)=>(dispatch)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
     })
 }
+// https://netmeddata.onrender.com/products
 const getUrlData=(queryparams,data,range=10000)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.get(`https://netmeddata.onrender.com/products?category=${data}&&price_lte=${range}`,queryparams).then((r)=>{
+    return axios.get(`https://poised-slacks-bear.cyclic.app/netmed?category=${data}&&price_lte=${range}`,queryparams).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
@@ -51,18 +52,19 @@ const getUrlData=(queryparams,data,range=10000)=>(dispatch)=>{
 
 const getOneProduct=(id)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.get(`https://netmeddata.onrender.com/products/${id}`).then((r)=>{
+    return axios.get(`https://poised-slacks-bear.cyclic.app/netmed/${id}`).then((r)=>{
        dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
     })
+    
 }
 
 
 export const addOneProduct=(id,params)=>(dispatch)=>{
     dispatch(getRequest());
-    return axios.post(`https://netmeddata.onrender.com/products/${id}`,params).then((r)=>{
-       dispatch({type:types.GET_PRODUCTS_SUCCESS,payload:r.data})
+    return axios.patch(`https://poised-slacks-bear.cyclic.app/netmed/${id}`,params).then((r)=>{
+       dispatch(getOneProduct(id))
     }).catch((e)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE,payload:e})
     })
@@ -72,7 +74,7 @@ export const addOneProduct=(id,params)=>(dispatch)=>{
 const getCart=(queryparams)=>(dispatch)=>{
 
     dispatch(getCartRequst());
-    return axios.get(`https://netmeddata.onrender.com/products`,queryparams).then((r)=>{
+    return axios.get(`https://poised-slacks-bear.cyclic.app/netmed`,queryparams).then((r)=>{
         dispatch({type:types.EDIT_PRODUCT_SUCCESS,payload:r.data})
      }).catch((e)=>{
          dispatch({type:types.EDIT_PRODUCT_FAILURE,payload:e})
@@ -92,10 +94,9 @@ const  addCart=(payload)=>(dispatch)=>{
 
 const EditCart=(id,payload)=>(dispatch)=>{
     dispatch({type:types.PATCH_PRODUCT_REQUEST});
-        return axios.patch(`https://netmeddata.onrender.com/products/${id}`,payload)
+        return axios.patch(`https://poised-slacks-bear.cyclic.app/netmed/${id}`,payload)
         .then((r)=>{
-            // dispatch({type:types.PATCH_PRODUCT_SUCCESS,payload:r.data})
-
+                dispatch(getCart())
             console.log(r.data)
 
         })

@@ -32,8 +32,10 @@ const SingalPage=()=>{
       })
     }
     return (
+      <>
+           <Navbar/>
     <div className="container">
-      <Navbar/>
+ 
        <div className="conatinerbox">
 
         <div className="imagebox">
@@ -61,9 +63,11 @@ const SingalPage=()=>{
         </div>
 
        </div>
-       <Footer/>
+       
 
     </div>
+    <Footer/>
+    </>
     )
 }
 export default SingalPage;

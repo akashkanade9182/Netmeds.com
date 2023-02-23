@@ -251,7 +251,7 @@ const handleNavigatetoCart=()=>{
         style={{
           display: "flex",
           alignItems: "center",
-          width: "70%",
+          width: "100%",
           margin: "auto",
           justifyContent: "space-between",
           padding: "0px 0px 16px",

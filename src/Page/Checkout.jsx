@@ -40,7 +40,7 @@ const Account = () => {
 
 const handlCheckout=()=>{
     alert("your product is delivered")
-    shift("/personalcare")
+    shift("/")
 
     
 
