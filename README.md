@@ -22,15 +22,21 @@
 <li>React-Bootstrap</li>
     
 </ul>
-<h2>Home Page</h2>
-<img src="https://i-converter.com/temp/230116-1673889949-223.196.192.175-png-jpg/i-converter_com.jpg"/>
-<h2>Login Modal</h2>
-<img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg" />
-<h2>Admin page</h2>
-<img src="https://i-converter.com/temp/230116-1673890959-157.47.48.61-png-jpeg/i-converter_com.jpeg"/>
-<br/>
-<h2>Product Page</h2>
-<img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg"/>
-<h2>Cart Page</h2>
-<img src="https://i-converter.com/temp/230116-1673890457-157.47.48.61-png-jpg/i-converter_com.jpg"/>
-<h2>Payment Page</h2>
+## Screenshots
+# 1) Homepage
+
+![App Screenshot](https://iili.io/HMH6iut.md.png)
+
+# 2)Login Page
+![App Screenshot](https://iili.io/HMHP2te.md.png)
+
+# 3)Productpage
+![App Screenshot](https://iili.io/HMHPRVa.md.png)
+
+# 4)Single Product page
+![App Screenshot](https://iili.io/HMHPvO7.md.png)
+# 5)Cart page
+![App Screenshot]("https://iili.io/HMHiu72.md.png)
+
+# 5)Admin Dashboard
+![App Screenshot]"https://iili.io/HMHsWFf.md.png)
