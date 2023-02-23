@@ -36,7 +36,7 @@
 # 4)Single Product page
 ![App Screenshot](https://iili.io/HMHPvO7.md.png)
 # 5)Cart page
-![App Screenshot]("https://iili.io/HMHiu72.md.png)
+![App Screenshot](https://iili.io/HMHiu72.md.png)
 
 # 5)Admin Dashboard
-![App Screenshot]"https://iili.io/HMHsWFf.md.png)
+![App Screenshot](https://iili.io/HMHsWFf.md.png)
