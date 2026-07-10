@@ -1,6 +1,7 @@
 
 <a href="https://63805784cb23923f2af8acf5--peppy-fenglisu-7c9d93.netlify.app/"><h1>Clone of Netmeds.com</h1><a>
-<h3>Netmeds is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices and It is Indian ecommerce website and it is popular for busing medicine and health related products.</h3>
+<h3>Netmeds is one of India’s most trusted online pharmacies, offering quality medicines at affordable prices. It is a popular Indian e-commerce platform where users can purchase medicines, healthcare products, and other wellness-related items.
+</h3>
     
 <h2>Contributers</h2>
 <ul>
